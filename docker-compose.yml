@@ -1,0 +1,7 @@
+docs:
+   image: fellah/gitbook
+   volumes:
+      - .:/srv/gitbook
+      - ./docs:/srv/gitbook/_book
+   ports:
+      - 4000:4000

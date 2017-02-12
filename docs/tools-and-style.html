@@ -1,0 +1,291 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Tools and style · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="structure.html" />
+    
+    
+    <link rel="prev" href="basic-formatting.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="who-your-writing-for.html">
+            
+                <a href="who-your-writing-for.html">
+            
+                    
+                    Who you're writing for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="basic-formatting.html">
+            
+                <a href="basic-formatting.html">
+            
+                    
+                    Basic Formatting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="tools-and-style.html">
+            
+                <a href="tools-and-style.html">
+            
+                    
+                    Tools and style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="structure.html">
+            
+                <a href="structure.html">
+            
+                    
+                    Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Tools and style</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tools-and-style">Tools and style</h1><p>Now that we have the basics out of the way, we need to think about larger issues. Where will we store our documentation? How should we write it?</p><h2 id="avoid-single-file-formats">Avoid single-file formats</h2><p>Single file formats like PDFs and word processing files are often where documentation goes to die. They are easily distributed, but that&apos;s also their biggest problem. Once out in the world, these files are static and unchanging. Users that went to great efforts to find them, will cling to them even as the information within the file decays. Depending on you project and your company&apos;s culture, you may face significant push-back in delivering documentation any other way.</p><h2 id="prefer-living-documentation">Prefer living documentation</h2><p>Your documentation should be a living thing. It should grow and change with your project as it grows and changes. The key is to create a single point of publication where you have control. That way, it is up to you when and how old documentation is retired and removed, and how updates are brought to the foreground. Today, this typically means a website of some sort.</p><h2 id="avoid-content-management-systems">Avoid content management systems</h2><p>Given the above point, you&apos;d assume that reaching for a dynamic, content management system (CMS) is the way to go. There are many systems like this available, most in the form of a wiki. While these systems are easy to stand up and lower the barrier to entry for your team, they should not be your first choice for the following reasons:</p><ul><li>CMSes create an additional, parallel workflow to the project&apos;s software development workflow.
+</li>
+<li>Revision, reversion, and review of CMS hosted docs has historically been lacking.
+</li>
+<li>CMSes a difficult for non-developers to run on their personal systems, making it difficult to troubleshoot problems.
+</li></ul>
+<h2 id="prefer-revision-control">Prefer revision control</h2><p>At it&apos;s core, documentation is just a bunch of text with the occasional image to help things along. This is not unlike software code, where revision control systems (RCS) have been used for decades. RCSes like git can manage text files, images, versioning, co-current edits, and more with widely available tutorials. Ideally, your documentation should share the same git repository as your project&apos;s source code. Whenever the software is updated, so is the documentation.</p><h2 id="prefer-static-site-generators">Prefer static site generators</h2><p>Since documentation tends to be divided across multiple sections and pages, it&apos;s best for technical writers to <em>not</em> write raw HTML. Instead, you should rely on an intermediate format such as <a href="http://asciidoc.org/" target="_blank">ASCIIdoc</a> or <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown</a>. Then, this documentation source code can be processed by a static site generator such as <a href="https://www.gitbook.com" target="_blank">Gitbook</a>, <a href="https://jekyllrb.com" target="_blank">Jekyll</a>, <a href="https://sculpin.io/" target="_blank">Sculpin</a>, or any number of options.</p><p>These static site generators apply branding, navigation, and visual styles in a consistent and unified fashion. You should never run the generator yourself, but instead rely on the software&apos;s build system to run and deploy the results to staging and production web servers on commit.</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="basic-formatting.html" class="navigation navigation-prev " aria-label="Previous page: Basic Formatting">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="structure.html" class="navigation navigation-next " aria-label="Next page: Structure">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tools and style","level":"1.4","depth":1,"next":{"title":"Structure","level":"1.5","depth":1,"path":"structure.md","ref":"structure.md","articles":[]},"previous":{"title":"Basic Formatting","level":"1.3","depth":1,"path":"basic-formatting.md","ref":"basic-formatting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tools-and-style.md","mtime":"2017-02-12T21:31:16.431Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-02-12T20:09:16.457Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
